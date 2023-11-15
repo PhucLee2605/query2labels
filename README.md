@@ -47,10 +47,10 @@ Download [MS-COCO 2014](https://cocodataset.org/#download).
 ```sh
 # single process
 python main_mlc.py \
---dataset_dir '/path/to/COCO14/' \
---backbone resnet101 --dataname coco14 --batch-size 64 --print-freq 100 \
---output "path/to/output" \
---world-size 1 --rank 0 --dist-url tcp://127.0.0.1:3717 \
+--dataset_dir 'data/coco' \
+--backbone resnet101 --dataname coco14 --batch-size 32 --print-freq 100 \
+--output "output" \
+--world-size 1 --rank 0 --dist-url tcp://127.0.0.1:8080 \
 --gamma_pos 0 --gamma_neg 2 --dtgfl \
 --epochs 80 --lr 1e-4 --optim AdamW --pretrained \
 --num_class 80 --img_size 448 --weight-decay 1e-2 \

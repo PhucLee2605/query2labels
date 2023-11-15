@@ -3,3 +3,10 @@ einops
 addict
 yapf
 inplace_abn
+tensorboard
+termcolor
+timm
+opencv-python
+randaugment
+scipy
+pycocotools
